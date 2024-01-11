@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="News Homepage Landing site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/news-homepage-preview/news-homepage-main/assets/images/favicon-32x32.png" />
+    <title>News Homepage</title>
+</head>
+
+<body class="flex justify-center items-center bg-black">
+    <div
+        class="flex flex-col items-center justify-start p-6 bg-white max-w-[370px] md:max-w-6xl relative md:px-20 md:py-20">
+        <!--Menu Bar in mobile Layout-->
+        <div class="absolute top-0 right-0 bg-white r z-10 w-2/3 p-6 h-96 hidden" id="condition">
+            <div class=" mb-20 w-full relative">
+                <button type="button" class=" absolute right-0" id="close">
+                    <img src="./assets/images/icon-menu-close.svg" alt="close icon">
+                </button>
+            </div>
+            <div class="w-full text-lg font-semibold">
+                <h1 class=" hovering_text">Home</h1>
+                <h1 class="my-3 hovering_text">New</h1>
+                <h1 class="my-3 hovering_text">Popular</h1>
+                <h1 class="my-3 hovering_text">Trending</h1>
+                <h1 class="hovering_text">Categories</h1>
+            </div>
+        </div>
+        <!--Logo & Menu-->
+        <div class="flex justify-between items-center w-full mb-6">
+            <div>
+                <img src="./assets/images/logo.svg" alt=" logo icon">
+            </div>
+            <button type="button" id="menu_icon_bar" class="md:hidden">
+                <img src="./assets/images/icon-menu.svg" alt="menu bar icon">
+            </button>
+            <div class="flex sm:hidden md:flex">
+                <h1 class="mr-3 hovering_text">Home</h1>
+                <h1 class="mx-3 hovering_text">New</h1>
+                <h1 class="mx-3 hovering_text">Popular</h1>
+                <h1 class="mx-3 hovering_text">Trending</h1>
+                <h1 class="ml-3 hovering_text">Categories</h1>
+            </div>
+        </div>
+        <!--Second Section-->
+        <div
+            class="flex flex-col md:flex-row items-center justify-center w-full md:h-[492.3px] md:items-start md:space-x-8 mt-8 md:my-8">
+            <!--Upper or Left Section-->
+            <div class="flex flex-col items-start justify-start md:w-3/5 md:h-full">
+                <picture class="md:w-full">
+                    <source media="(min-width:768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                    <img src="./assets/images/image-web-3-mobile.jpg" alt=" web image">
+                </picture>
+                <div class="flex flex-col md:flex-row justify-center items-center  mt-6 md:space-x-4 md:items-start">
+                    <div class="md:w-3/5">
+                        <h1 class="w-full text-5xl xl:text-6xl lg:text-5xl md:text-4xl font-extrabold first_size">
+                            The Bright Future of Web 3.0?
+                        </h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-start md:w-2/5">
+                        <p class="my-6 text-base xl:text-base lg:text-sm md:text-xs md:my-0 md:mb-8 ">
+                            We dive into the next evolution of the web that claims to put the power of the
+                            platforms back
+                            into the hands of the
+                            people.
+                            But is it really fulfilling its promise?
+                        </p>
+                        <button
+                            class="bg-orange-500 text-black py-4 min-w-52 md:min-w-[135.7px] tracking-[0.3rem] md:tracking-widest font-semibold uppercase hover:bg-black hover:text-white duration-500">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Lower or Right Section-->
+            <div class="w-full bg-black text-white p-6 md:px-6 md:py-3 my-12 md:my-0 md:w-2/5 md:h-full">
+                <h2 class="text-yellow-300 text-4xl xl:text-4xl lg:text-3xl md:text-2xl font-semibold">
+                    New
+                </h2>
+                <h3 class="text-xl xl:text-xl lg:text-lg md:text-base font-semibold mt-6 xl:mt-6 lg:mt-5 md:mt-3 mb-3">
+                    Hydrogen VS Electric Cars
+                </h3>
+                <p class="xl:text-base lg:text-base md:text-sm">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+                <div class="border-white border-b-2 my-7 xl:my-7 lg:my-5 md:my-3"></div>
+                <h3 class="text-xl xl:text-xl lg:text-lg md:text-base font-semibold mb-3">
+                    The Downsides of AI Artistry
+                </h3>
+                <p class="xl:text-base lg:text-base md:text-sm">
+                    What are the possible adverse effects of on-demand AI image generation?
+                </p>
+                <div class="border-white border-b-2 my-7 xl:my-7 lg:my-5 md:my-3"></div>
+                <h3 class="text-xl xl:text-xl lg:text-lg md:text-base font-semibold mb-3">
+                    Is VC Funding Drying Up?
+                </h3>
+                <p class="xl:text-base lg:text-base md:text-sm">
+                    Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+            </div>
+        </div>
+        <!--Third Section-->
+        <div
+            class="flex flex-col md:flex-row md:justify-between justify-center items-center md:items-start w-full space-y-8 md:space-y-0  md:mt-10 ">
+            <div class="flex justify-center items-center md:items-start space-x-3">
+                <img class="w-1/3 xl:w-[100px] lg:w-[90px] md:w-[80px]" src="./assets/images/image-retro-pcs.jpg"
+                    alt=" retro pcs image">
+                <div class="space-y-2">
+                    <h2 class="text-4xl xl:text-4xl lg:text-2xl md:text-xl font-bold">01</h2>
+                    <h3 class="xl:text-base lg:text-sm md:text-xs font-bold hovering_text">Reviving Retro PCs</h3>
+                    <p class="xl:text-base lg:text-sm md:text-xs">What happens when old PCs are given modern upgrades?
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center md:items-start space-x-3">
+                <img class="w-1/3 xl:w-[100px] lg:w-[90px] md:w-[80px]" src="./assets/images/image-top-laptops.jpg"
+                    alt=" laptop image">
+                <div class="space-y-2">
+                    <h2 class="text-4xl xl:text-4xl lg:text-2xl md:text-xl font-bold">02</h2>
+                    <h3 class="xl:text-base lg:text-sm md:text-xs font-bold hovering_text">Top 10 Laptops of 2022</h3>
+                    <p class="xl:text-base lg:text-sm md:text-xs">Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center md:items-start space-x-3">
+                <img class="w-1/3 xl:w-[100px] lg:w-[90px] md:w-[80px]" src="./assets/images/image-gaming-growth.jpg"
+                    alt=" playstation console">
+                <div class="space-y-2 ">
+                    <h2 class="text-4xl xl:text-4xl lg:text-2xl md:text-xl font-bold">03</h2>
+                    <h3 class="xl:text-base lg:text-sm md:text-xs font-bold hovering_text">The Growth of Gaming</h3>
+                    <p class="xl:text-base lg:text-sm md:text-xs">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
